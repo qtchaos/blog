@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Chandramaya';
+  src: url('../assets/chandramaya/Chandramaya.woff2');
+  font-style: normal;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background: #ebe9e9;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 14px;
+  border: 2px #818f66 solid;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar:vertical {
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background: #818f66;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: #b2bba0;
+  border: 2px #818f66 solid;
+  border-radius: 10px;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #b2bba0;
+  background: #b2bba0;
+}
+
+::selection {
+  color: #f3f8f2;
+  background: #b2bba0;
+}
