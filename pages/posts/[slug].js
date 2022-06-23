@@ -55,7 +55,7 @@ export default function PostPage({ frontmatter, content }) {
           {(frontmatter.tags).map((tag) =>
             <Tag key={tag}>{tag}</Tag>
           )}
-          <h1 className={`pt-8 sm:pt-8 lg:pt-10`}>{frontmatter.title}</h1>
+          <h1 className={`pt-4`}>{frontmatter.title}</h1>
 
           <article className={`prose prose-md prose-code:text-sm sm:prose-code:text-md lg:prose-lg`} dangerouslySetInnerHTML={{ __html: md.render(content) }} />
         </main>
